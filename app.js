@@ -42,7 +42,7 @@ function calculateAgeFn(year, month, day) {
   if (! checkOverEighteenFn(year, month, day)){return "error: sorry u r under 18"} // if age was < 18
 
   let currentTime = new Date() // current date & time
-  let NewMonth = currentTime.getMonth() + 1 // current month
+  let NewMonth = currentTime.getMonth()  // current month
   let NewDay = currentTime.getDate() // curent day
   let NewYear = currentTime.getFullYear() // current year
 
