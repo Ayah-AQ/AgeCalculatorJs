@@ -46,7 +46,7 @@ function calculateAgeFn(year, month, day) {
   let NewDay = currentTime.getDate() // curent day
   let NewYear = currentTime.getFullYear() // current year
 
-  return Math.round((NewYear-year)+ (NewMonth-month)/30 + (NewDay-day)/365);
+  return Math.round((NewYear-year)+ (NewMonth-month)/12 + (NewDay-day)/365);
 // Math.round() function returns the value of a number rounded to the nearest integer
 // fix time unit all to year to do the calculations 
 }
